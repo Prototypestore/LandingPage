@@ -202,6 +202,21 @@ footer p {
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
+  .review-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .review {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
     .features, .portfolio-items, .review-items {
         flex-direction: column;
         align-items: center;
@@ -237,4 +252,10 @@ footer p {
     .portfolio-item img {
         width: 90%;
     }
+}
+
+@media (max-width: 480px) {
+  .review-items {
+    grid-template-columns: 1fr;
+  }
 }
